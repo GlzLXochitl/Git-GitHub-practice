@@ -22,3 +22,20 @@ if respuesta.lower() == "y": # Start conditional with 'y'
         print("End (Exercise 1)*********************************") # End of the exercise
 else:
     print("End (Exercise 1)*********************************") # End of the exercise
+
+#2. A tuple with 7 elements and print it using a while loop. 2 commit
+tupla = ("xochitl", "emile", "farfetch", "mario", "corpus", "jaime", "emilio") # Tuple with 7 elements
+print("\n")
+print("Start Exercise 2*********************************") # Start of the exercise
+respuesta = input("Start process (y/n): ") # Ask for permission to start the process
+if respuesta.lower() == "y": # Start conditional with 'y'
+    indice = 0 # Index at 0
+    print("Available elements:")
+    while indice < len(tupla): # Print the elements
+        print(tupla[indice])
+        indice += 1
+    print("End (Exercise 2)*********************************") # End of the exercise
+    print("\n")
+else:
+    print("End (Exercise 2)*********************************") # End of the exercise
+    print("\n")
