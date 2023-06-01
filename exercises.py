@@ -61,3 +61,38 @@ if response.lower() == "y": # this line begins a conditional with y
 else:
     print("Ends (exercise3)") # end the exercise
     print("\n")
+
+#4. A function called "operation" that receives 3 parameters. 4 confirmation
+print("Start exercise 4*********************************") # Starts the exercise
+response = input("Start process (y/n): ") # Asks with y or n to continue with the process
+if response.lower() == "y": # This line starts a conditional with y to initiate the process
+    print("Calculation options:")
+    lista = ["Addition", "Subtraction", "Multiplication", "Division"] # List
+    for element in lista:
+        print(element) # Prints the elements of the list
+    print("\n")
+    fNumber = int(input("First number: ")) # Receives the first variable
+    sNumber = int(input("Second number: ")) # Receives the second variable
+    print("Operation results:")
+    def operation(operator, firstNumber, secondNumber): # Function with operations by calculation type
+        if operator == "+":
+            result = firstNumber + secondNumber
+        elif operator == "-":
+            result = firstNumber - secondNumber
+        elif operator == "":
+            result = firstNumber * secondNumber
+        elif operator == "/":
+            if secondNumber == 0: # In case any of the numbers is 0
+                return "indeterminate"
+            result = firstNumber / secondNumber
+        return result
+    print(operation("+", fNumber, sNumber)) # Prints the results
+    print(operation("-", fNumber, sNumber))
+    print(operation("", fNumber, sNumber))
+    print(operation("/", fNumber, sNumber))
+    print("End (exercise 4)*********************************") # Ends the exercise
+else:
+    print("End (exercise 4)*********************************") # Ends the exercise
+
+
+
