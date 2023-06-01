@@ -39,3 +39,25 @@ if respuesta.lower() == "y": # Start conditional with 'y'
 else:
     print("End (Exercise 2)*********************************") # End of the exercise
     print("\n")
+
+#3. A dictionary with 3 properties, modify any of them, and print it. 3rd commit
+dictionary = {"Last Medical Appointment Month": "September", "Last Name": "Medina", "First Name": "Mario"} # dictionary with assigned data
+print("Start exercise3*********************************") # start the exercise
+response = input("Start the process (y/n): ") # prompt with y or n to continue the process
+if response.lower() == "y": # this line begins a conditional with y
+    print("Current data:")
+    for key, value in dictionary.items(): # print the current elements
+        print(key + ": " + str(value))
+    print("\n")
+    modification = input("Modify last medical appointment month? (y/n): ") # ask if modification is desired
+    if modification.lower() == "y": # this line begins a conditional with y
+        newData = input("Last medical appointment month: ") # prompt and receive the data to be modified
+        dictionary["Last Medical Appointment Month"] = newData
+        print("Updated data:")
+        for key, value in dictionary.items(): # print the updated elements
+            print(key + ": " + str(value))
+        print("Ends (exercise3)") # end the exercise
+    print("\n")
+else:
+    print("Ends (exercise3)") # end the exercise
+    print("\n")
